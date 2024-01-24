@@ -50,6 +50,7 @@
 
 @media screen and (min-width: 1200px) {
   .Bill {
+    margin-top: 1rem;
     width: 23.6875rem;
   }
   .bill-input {

@@ -13,8 +13,8 @@
 
 @media screen and (min-width: 1200px) {
   .Calculator {
-    width: 57.5rem;
-    height: 30.0625rem;
+    width: 54rem;
+    height: 28.0625rem;
     border-radius: 1.5625rem;
     display: flex;
     flex-direction: column;

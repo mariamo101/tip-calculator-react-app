@@ -88,7 +88,22 @@ input {
 
 @media screen and (min-width: 1200px) {
   .Reset {
+    margin-top: 1rem;
     width: 25.8125rem;
     height: 26.0625rem;
+  }
+  .Tip-Amount,
+  .Total {
+    width: 20.8125rem;
+    height: 4.4375rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .amount-p {
+    margin-bottom: 10px;
+  }
+  .reset-btn {
+    width: 20.8125rem;
+    height: 3rem;
   }
 }
