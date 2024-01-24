@@ -5,11 +5,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-wrap: wrap;
   align-content: center;
 }
 .select-tip {
+  margin-top: 1rem;
   width: 19.43rem;
   color: #5e7a7d;
   font-size: 1rem;
@@ -40,4 +41,23 @@
   color: #00474b;
   border: 2px solid #26c2ae;
   background: #f3f9fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .select-tip {
+    width: 23.6875rem;
+  }
+  .SelectTip {
+    display: flex;
+    width: 23.6875rem;
+    height: 9.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+  }
+  .input-tip {
+    width: 6.5rem;
+  }
 }

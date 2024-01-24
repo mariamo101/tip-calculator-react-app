@@ -9,21 +9,23 @@ function SelectTip() {
     console.log(e.target.value);
   };
   return (
-    <div className="SelectTip">
+    <>
       <p className="select-tip"> Select Tip % </p>
-      <ButtonTip value="5%" />
-      <ButtonTip value="10%" />
-      <ButtonTip value="15%" />
-      <ButtonTip value="25%" />
-      <ButtonTip value="50%" />
-      <input
-        className="input-tip"
-        type="text"
-        placeholder="Custom"
-        value={selectTip}
-        onChange={onChange}
-      />
-    </div>
+      <div className="SelectTip">
+        <ButtonTip value="5%" />
+        <ButtonTip value="10%" />
+        <ButtonTip value="15%" />
+        <ButtonTip value="25%" />
+        <ButtonTip value="50%" />
+        <input
+          className="input-tip"
+          type="text"
+          placeholder="Custom"
+          value={selectTip}
+          onChange={onChange}
+        />
+      </div>
+    </>
   );
 }
 

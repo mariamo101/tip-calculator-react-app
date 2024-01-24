@@ -17,3 +17,9 @@
   border-radius: 0.3125rem;
   background: #9fe8df;
 }
+@media screen and (min-width: 1200px) {
+  .btn {
+    width: 7.3125rem;
+    height: 3rem;
+  }
+}

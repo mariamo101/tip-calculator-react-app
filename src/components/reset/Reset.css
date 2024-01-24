@@ -85,3 +85,10 @@ input {
   color: #00474b;
   background: #0d686d;
 }
+
+@media screen and (min-width: 1200px) {
+  .Reset {
+    width: 25.8125rem;
+    height: 26.0625rem;
+  }
+}

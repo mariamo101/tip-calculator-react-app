@@ -47,3 +47,13 @@
   border: 2px solid #26c2ae;
   background: #f3f9fa;
 }
+
+@media screen and (min-width: 1200px) {
+  .Bill {
+    width: 23.6875rem;
+  }
+  .bill-input {
+    width: 21.6875rem;
+    max-width: 21.6875rem;
+  }
+}
