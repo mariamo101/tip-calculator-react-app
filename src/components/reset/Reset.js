@@ -1,6 +1,12 @@
+import { useState } from "react";
 import "../reset/Reset.css";
 
 function Reset() {
+  const [reset, setReset] = useState("");
+  const onClick = () => {
+    setReset();
+    console.log(reset);
+  };
   return (
     <div className="Reset">
       <div className="Tip-Amount">
@@ -17,7 +23,10 @@ function Reset() {
         </div>
         <p className="amount-p">$0.00</p>
       </div>
-      <button className="reset-btn"> RESET</button>
+      <button className="reset-btn" onClick={onClick}>
+        {reset}
+        RESET
+      </button>
     </div>
   );
 }
