@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+body {
+  background: #c5e4e7;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+  margin: 0;
+}
+input,
+p {
+  margin: 0;
+  padding: 0;
+}

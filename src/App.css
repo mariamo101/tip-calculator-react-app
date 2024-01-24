@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+.App {
+  margin: auto;
+  width: 23.4375rem;
+  display: flex;
+  padding-top: 3.125rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.554rem;
+}
+.logo {
+  width: 5.4165rem;
+  height: 3.321rem;
+}

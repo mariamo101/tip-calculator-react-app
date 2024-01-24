@@ -1,0 +1,19 @@
+.btn {
+  width: 9.16444rem;
+  height: 3rem;
+  border-radius: 0.3125rem;
+  background: #00474b;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #00474b;
+  border-radius: 0.3125rem;
+  background: #9fe8df;
+}

@@ -1,0 +1,87 @@
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.Reset {
+  margin-top: 2rem;
+  width: 20.4375rem;
+  height: 16.0625rem;
+  border-radius: 0.9375rem;
+  background: #00474b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Tip-Amount,
+.Total {
+  display: flex;
+  width: 17.5625rem;
+  height: 3rem;
+  padding-bottom: 0.0625rem;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3.4375rem;
+  flex-shrink: 0;
+}
+.description {
+  width: 6.1rem;
+  height: 2.75rem;
+}
+.amount,
+.total,
+.person {
+  width: 7rem;
+}
+.person {
+  color: #7f9d9f;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.amount,
+.total {
+  color: #fff;
+  font-family: "Space Mono";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.amount-p {
+  background: #00474b;
+  margin: 0;
+  color: #26c2ae;
+  max-width: 7rem;
+  text-align: right;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.04169rem;
+}
+
+.reset-btn {
+  border: none;
+  width: 17.5625rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  background: #26c2ae;
+  color: #00474b;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: #9fe8df;
+}
+.reset-btn:focus {
+  color: #00474b;
+  background: #0d686d;
+}

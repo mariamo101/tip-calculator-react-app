@@ -1,0 +1,43 @@
+.SelectTip {
+  display: flex;
+  width: 19.4375rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.select-tip {
+  width: 19.43rem;
+  color: #5e7a7d;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.input-tip {
+  width: 8rem;
+  height: 3rem;
+  padding-right: 0.8rem;
+  border-radius: 0.3125rem;
+  background: #f3f9fa;
+  border: none;
+  color: #547878;
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  outline: none;
+  cursor: pointer;
+}
+::placeholder {
+  color: #5e7a7d;
+}
+.input-tip:hover {
+  color: #00474b;
+  border: 2px solid #26c2ae;
+  background: #f3f9fa;
+}
