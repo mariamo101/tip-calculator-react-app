@@ -6,7 +6,11 @@ function Bill() {
   const [inputBill, setInputBill] = useState("");
 
   const onChange = (e) => {
-    setInputBill(e.target.value);
+    if (setInputBill !== "value") {
+      setInputBill(Number(e.target.value));
+    }else{
+      setInputBill(""); 
+    }
     console.log(e.target.value);
   };
   return (

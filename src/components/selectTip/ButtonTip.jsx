@@ -1,16 +1,16 @@
-import { useState } from "react";
 import "../selectTip/ButtonTip.css";
 
-function ButtonTip({ value }) {
-  const [buttonTip, setButtonTip] = useState("");
+function ButtonTip({ value, percentTip ,setPercentTip }) {
+  
   const onClick = () => {
-    setButtonTip();
-    console.log(buttonTip);
+
+  console.log( setPercentTip);
+    console.log(Number(value.slice(0,-1)));
   };
 
   return (
     <button className="btn" onClick={onClick}>
-      {buttonTip}
+      {percentTip}
       {value}
     </button>
   );

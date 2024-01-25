@@ -5,10 +5,12 @@ import "../numberPeople/NumberPeople.css";
 function NumberPeople() {
   const [people, setPeople] = useState("");
   const onChange = (e) => {
-    setPeople(e.target.value);
-    console.log(e.target.value);
+    if (setPeople !== "value") {
+      setPeople(Number(e.target.value));
+    }else{
+      setPeople(""); 
+    }
   };
-
   return (
     <div className="NumberPeople">
       <p className="people"> Number of People</p>
