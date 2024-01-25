@@ -7,12 +7,13 @@ function SelectTip() {
   const onChange = (e) => {
     setPercentTip(Number(e.target.value));
     console.log(e.target.value)
+    
   };
   return (
     <>
       <p className="select-tip"> Select Tip % </p>
       <div className="SelectTip">
-        <ButtonTip value="5%" percentTip={percentTip} setPercentTip={setPercentTip} />
+        <ButtonTip value="5%" />
         <ButtonTip value="10%" />
         <ButtonTip value="15%" />
         <ButtonTip value="25%" />
