@@ -25,14 +25,14 @@ function Reset({stateReset,
           <p className="amount"> Tip Amount </p>
           <p className="person"> / person </p>
         </div>
-        <p className="amount-p">${tiPamount}</p>
+        <p className="amount-p">{tiPamount}</p>
       </div>
       <div className="Total">
         <div className="description">
           <p className="total"> Total </p>
           <p className="person"> / person </p>
         </div>
-        <p className="amount-p">${totalPerPerson}</p>
+        <p className="amount-p">{totalPerPerson}</p>
       </div>
       <button className="reset-btn" onClick={onClick}>
         {stateReset}

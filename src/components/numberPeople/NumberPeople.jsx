@@ -5,14 +5,20 @@ import { useState,useEffect } from "react";
 function NumberPeople({statePeople , stateSetPeople}) {
   const [errorMessage, setErrorMessage] = useState("");
 
+  const color ={
+    orange:'#e17457',
+  }
+
   useEffect(() => {
    
     if (statePeople === 0) {
       setErrorMessage("Can't be zero");
+      const inputElement = document.getElementById("personInput");
+      inputElement.style.border = `2px solid ${color.orange}`;
     } else {
       setErrorMessage(""); 
     }
-  }, [statePeople]);
+  }, [statePeople, color.orange]);
 
 
   const onChange = (e) => {
@@ -32,6 +38,7 @@ function NumberPeople({statePeople , stateSetPeople}) {
       </div>
       <img src={person} className="person" alt="person-svg" />
       <input
+        id="personInput"
         className="person-input"
         type="number"
         placeholder="0"

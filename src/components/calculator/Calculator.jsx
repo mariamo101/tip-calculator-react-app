@@ -10,8 +10,8 @@ function Calculator() {
   const [people, setPeople] = useState("");
   const [percentTip, setPercentTip] = useState("");
   const [reset, setReset] = useState("");
-  const [tipAmount, setTipAmount] = useState("0.00");
-  const [total , setTotal]=useState("0.00");
+  const [tipAmount, setTipAmount] = useState("");
+  const [total , setTotal]=useState("");
 
   useEffect(() => {
     if (inputBill && people && percentTip > 0 ){
@@ -19,6 +19,9 @@ function Calculator() {
       setTipAmount(tipAmountPerPerson);
       const total =  (inputBill + (inputBill * (percentTip / 100)) / people).toFixed(2);
       setTotal(total)
+    }else{
+      setTipAmount('$0.00')
+      setTotal('$0.00')
     }
   }, [inputBill,percentTip,people]);
 
