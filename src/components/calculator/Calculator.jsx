@@ -17,10 +17,10 @@ function Calculator() {
     if (inputBill && people && percentTip > 0 ){
       const tipAmountPerPerson = ((inputBill * (percentTip / 100)) / people).toFixed(2);
       setTipAmount(tipAmountPerPerson);
-      const total = (inputBill + inputBill*(percentTip/100)/people).toFixed(2);
+      const total =  (inputBill + (inputBill * (percentTip / 100)) / people).toFixed(2);
       setTotal(total)
     }
-  }, [inputBill, percentTip,people]);
+  }, [inputBill,percentTip,people]);
 
   return (
     <>
@@ -43,5 +43,4 @@ function Calculator() {
     </>
   );
 }
-
 export default Calculator ;

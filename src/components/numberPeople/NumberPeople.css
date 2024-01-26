@@ -46,6 +46,11 @@
   border: 2px solid #26c2ae;
   background: #f3f9fa;
 }
+.errorSection {
+  display: flex;
+  gap: 5rem;
+  color: #e17457;
+}
 
 @media screen and (min-width: 1200px) {
   .NumberPeople {
