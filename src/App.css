@@ -13,3 +13,8 @@
   width: 5.4165rem;
   height: 3.321rem;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

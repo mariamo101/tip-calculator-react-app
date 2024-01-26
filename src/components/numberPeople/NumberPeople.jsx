@@ -1,14 +1,13 @@
-import { useState } from "react";
 import person from "../images/icon-person.svg";
 import "../numberPeople/NumberPeople.css";
 
-function NumberPeople() {
-  const [people, setPeople] = useState("");
+function NumberPeople({statePeople , stateSetPeople}) {
+  
   const onChange = (e) => {
-    if (setPeople !== "value") {
-      setPeople(Number(e.target.value));
+    if (stateSetPeople !== "value") {
+      stateSetPeople(Number(e.target.value));
     }else{
-      setPeople(""); 
+      stateSetPeople(""); 
     }
   };
   return (
@@ -17,9 +16,9 @@ function NumberPeople() {
       <img src={person} className="person" alt="person-svg" />
       <input
         className="person-input"
-        type="text"
+        type="number"
         placeholder="0"
-        value={people}
+        value={statePeople}
         onChange={onChange}
       ></input>
     </div>

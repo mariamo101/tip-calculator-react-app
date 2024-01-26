@@ -1,15 +1,13 @@
-import { useState } from "react";
 import "../bill/Bill.css";
 import dollar from "../images/icon-dollar.svg";
 
-function Bill() {
-  const [inputBill, setInputBill] = useState("");
-
+function Bill({stateInputBill , stateSetInputBill}) {
+ 
   const onChange = (e) => {
-    if (setInputBill !== "value") {
-      setInputBill(Number(e.target.value));
+    if (stateSetInputBill !== "value") {
+      stateSetInputBill(Number(e.target.value));
     }else{
-      setInputBill(""); 
+      stateSetInputBill(""); 
     }
     console.log(e.target.value);
   };
@@ -19,9 +17,9 @@ function Bill() {
       <img src={dollar} className="dollar" alt="dollar-svg" />
       <input
         className="bill-input"
-        type="text"
+        type="number"
         placeholder="0"
-        value={inputBill}
+        value={stateInputBill}
         onChange={onChange}
       ></input>
     </div>

@@ -1,28 +1,26 @@
-import { useState } from "react";
 import "../selectTip/SelectTip.css";
 import ButtonTip from "./ButtonTip";
 
-function SelectTip() {
-  const [percentTip, setPercentTip] = useState("");
+function SelectTip({satetPercentTip ,stateSetPercentTip}) {
+  
   const onChange = (e) => {
-    setPercentTip(Number(e.target.value));
-    console.log(e.target.value)
-    
+    stateSetPercentTip(Number(e.target.value));
   };
+ 
   return (
     <>
       <p className="select-tip"> Select Tip % </p>
       <div className="SelectTip">
-        <ButtonTip value="5%" />
-        <ButtonTip value="10%" />
-        <ButtonTip value="15%" />
-        <ButtonTip value="25%" />
-        <ButtonTip value="50%" />
+        <ButtonTip value="5%" shareChange={stateSetPercentTip}/>
+        <ButtonTip value="10%"  shareChange={stateSetPercentTip}/>
+        <ButtonTip value="15%" shareChange={stateSetPercentTip}/>
+        <ButtonTip value="25%" shareChange={stateSetPercentTip}/>
+        <ButtonTip value="50%" shareChange={stateSetPercentTip}/>
         <input
           className="input-tip"
-          type="text"
+          type="number"
           placeholder="Custom"
-          value={percentTip}
+          value={satetPercentTip}
           onChange={onChange}
         />
       </div>

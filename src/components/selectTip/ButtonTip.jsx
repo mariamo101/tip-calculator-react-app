@@ -1,8 +1,11 @@
 import "../selectTip/ButtonTip.css";
 
-function ButtonTip({ value }) {
+function ButtonTip({ value , shareChange }) {
+
   const onClick = () =>{
-  console.log(Number(value.slice(0,-1)));
+      const newPercent = Number(value.slice(0, -1));
+      shareChange(newPercent);
+    
   }
   return (
     <button className="btn" onClick={onClick} > 

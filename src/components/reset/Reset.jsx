@@ -1,11 +1,22 @@
-import { useState } from "react";
 import "../reset/Reset.css";
 
-function Reset() {
-  const [reset, setReset] = useState("");
+function Reset({stateReset,
+  setTotal,
+  tiPamount,
+  setTipAmount,
+  totalPerPerson,
+  setInputBill,
+  setPercentTip,
+  setPeople
+}) {
+
   const onClick = () => {
-    setReset();
-    console.log(reset);
+    setPeople('')
+    setPercentTip('')
+    setInputBill('')
+    setTipAmount('0.00');
+    setTotal('0.00');  
+
   };
   return (
     <div className="Reset">
@@ -14,17 +25,17 @@ function Reset() {
           <p className="amount"> Tip Amount </p>
           <p className="person"> / person </p>
         </div>
-        <p className="amount-p">$0.00</p>
+        <p className="amount-p">${tiPamount}</p>
       </div>
       <div className="Total">
         <div className="description">
           <p className="total"> Total </p>
           <p className="person"> / person </p>
         </div>
-        <p className="amount-p">$0.00</p>
+        <p className="amount-p">${totalPerPerson}</p>
       </div>
       <button className="reset-btn" onClick={onClick}>
-        {reset}
+        {stateReset}
         RESET
       </button>
     </div>
