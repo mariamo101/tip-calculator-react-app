@@ -12,10 +12,8 @@
     }
   }, [inputBill,percentTip,people]);
 `
-
 `
-
- <div className="Calculator">
+<div className="Calculator">
       <Bill  stateInputBill={inputBill}  stateSetInputBill={setInputBill}/>
       <SelectTip  satetPercentTip={percentTip} stateSetPercentTip={setPercentTip}/>
       <NumberPeople statePeople={people} stateSetPeople={setPeople} />
